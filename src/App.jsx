@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import EntityCard from './components/bookcard';
+import './index.css';
 
 function App() {
   const books = [
@@ -34,7 +36,16 @@ function App() {
     },
   ];
 
-  return <>{/* write code to display all the books using */}</>;
+  return (
+    <div className='lala'>
+      <h1 className='heading'>Entities List</h1>
+      <div className='content'>
+        {books.map((item) => (
+          <EntityCard key={item.id} image={item.image} name={item.name} genre={item.genre} author={item.author} />
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default App;

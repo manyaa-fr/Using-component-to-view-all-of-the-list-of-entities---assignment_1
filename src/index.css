@@ -13,6 +13,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #71c1ff;
+  background-color: #606266;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 250px; 
+  min-height: 350px; 
+}
+
+.lala{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  flex-wrap: wrap;
+}
+
+.heading{
+  justify-self: center;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagess{
+  height: 100px;
+  width: 100px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
